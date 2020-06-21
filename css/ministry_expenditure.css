@@ -251,7 +251,11 @@ body{
 	margin-top: 10px;
 	height: 550px;
 	position: relative;
+<<<<<<< HEAD
 	margin-bottom: 150px;
+=======
+	margin-bottom: 100px;
+>>>>>>> 51aab379d743e1f303068533a99a3e2d75823192
 }
 .ministry_list_table{
 	width: 100%;
