@@ -105,6 +105,40 @@ body{
 .fa-filter{
 	margin-left: 5px;
 }
+
+.graph_filter:hover {
+	color: white; 
+	background: #00945e;
+ }
+ .graph_filter:focus {
+	color: white; 
+	background: #00945e;
+ }
+ 
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f1f1f1;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1; 
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-content li {
+ color: black;
+ padding: 12px 10px;
+ text-decoration: none;
+ display: block;
+ margin-left: -40px ;
+ }
+ 
+ /* Change color of dropdown links on hover */
+ .dropdown-content li:hover {background-color: #ddd; cursor: pointer;}
+ 
+ /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .show {display:block;}
 .graph_Xaxis_container{
 	position: absolute;
     width: 850px;
@@ -124,7 +158,7 @@ body{
 	width: 20px;
 	height: 100%;
 	float: left;
-	margin-right: 6.5%;
+	margin-right: 6.8%;
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0.1,0.3);
 }
 .graph_Xaxis_title{
@@ -182,7 +216,7 @@ body{
 }
 .filter_section p{
 	float: left;
-	line-height: 55px;
+	line-height: 85px;
 	font-size: 18px;
 }
 
@@ -191,11 +225,11 @@ body{
 	order: 2;
 	color: white;
 	background: #00945E;
-	padding: 4px 15px;
+	padding: 4px 12px;
 	border-radius: 7px;
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0.1,0.3);
 	cursor: pointer;
-	margin-left: 5px;
+	margin-left: 7px;
 	margin-top: 25px;
 }
 .table_name{
@@ -217,6 +251,7 @@ body{
 	margin-top: 10px;
 	height: 550px;
 	position: relative;
+	margin-bottom: 150px;
 }
 .ministry_list_table{
 	width: 100%;
@@ -294,8 +329,8 @@ tr:nth-child(even) {
 		top: 435px;
 		width: 600px;
 	}
-	.graph_Xaxis li{
-		margin-right: 5.3%;
+	.graph_Xaxis li {
+    	margin-right: 5.3%;
 	}
 	.graph_Yaxis_title{
 		top: 170px;
@@ -310,7 +345,7 @@ tr:nth-child(even) {
 }
 @media (max-width: 926px){
 	.expenditure_graph_body{
-		height: 860px;
+		height: 890px;
 	}
 	.expenditure_graph{
 		position: absolute;
@@ -318,7 +353,7 @@ tr:nth-child(even) {
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
-		width: 700px;
+		width: 700px !important;
 	}
 	.list_plotted{
 		width: 200px !important;
@@ -333,7 +368,7 @@ tr:nth-child(even) {
 	}
 	.graph_Xaxis_container {
 	    top: 440px;
-	    width: 600px;
+	    width: 700px;
 	    left: 0;
 	    right: 0;
 	    margin-right: auto;
@@ -345,6 +380,9 @@ tr:nth-child(even) {
 	}
 	.expenditure_graph_title{
 		font-size: 22px;
+	}
+	.graph_Xaxis li {
+    	margin-right: 6%;
 	}
 }
 @media (max-width: 700px){
@@ -421,7 +459,7 @@ tr:nth-child(even) {
 	}
 	.expenditure_graph_body{
 		text-align: left;
-		height: 755px;
+		height: 770px;
 	}
 	.graph_Xaxis_container {
 		top: 325px;	
